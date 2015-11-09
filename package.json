@@ -1,0 +1,19 @@
+{
+  "name": "@geekpark/share-action",
+  "version": "1.0.0",
+  "description": "open window/page to share some url",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "babel": "babel src/index.js -o index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab_ssh.geekpark.net:Vanilla/share-action.git"
+  },
+  "keywords": [
+    "gnpm"
+  ],
+  "author": "Vanilla",
+  "license": "ISC"
+}
