@@ -3,8 +3,10 @@ share-action
 open window/page to share some url
 
 ### Usage
+`gnpm i @geekpark/share-action`
+
 ```javascript
-import share from 'utils/share';
+import share from '@geekpark/share-action';
 
 $('.js-share').on('click', function () {
   var type = $(this).data('type');
