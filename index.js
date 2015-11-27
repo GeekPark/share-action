@@ -35,7 +35,7 @@ var share = {
         jump = 'http://service.weibo.com/share/share.php?url=' + url + '&appkey=' + appkey + '&title=' + text + '&pic=' + thumb + '&ralateUid=1735559201';
         break;
       case 'twitter':
-        jump = 'https://twitter.com/share?url=' + url + '&text=' + text;
+        jump = 'https://twitter.com/share?url=' + url + '&text=' + (text + ' @geekparknet');
         break;
       case 'linkdin':
         jump = 'https://www.linkedin.com/shareArticle?mini=true&url=' + url + '&title=' + text + '&summary=' + des + '&source=GeekPark';
