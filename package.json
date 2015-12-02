@@ -1,6 +1,6 @@
 {
   "name": "@geekpark/share-action",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "open window/page to share some url",
   "main": "index.js",
   "scripts": {
