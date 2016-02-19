@@ -27,7 +27,7 @@ var share = {
       case 'twitter':
         jump = `https://twitter.com/intent/tweet?url=${url}&text=${text}&via=GeekParkNet`;
         break;
-      case 'linkdin':
+      case 'linkedin':
         jump = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${text}&summary=${des}&source=GeekPark`
         break;
     }
