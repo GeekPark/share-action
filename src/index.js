@@ -13,7 +13,7 @@ var share = {
       `width=${this.setting.width}, height=${this.setting.height}, top=${this.getCoords('top')}, left=${this.getCoords('left')}, toolbar=no, menubar=no, scrollbars=no, location=yes, resizable=no, status=no`);
   },
   run({type, url, text, des, thumb, appkey}) {
-    url = url || document.location;
+    url = encodeURIComponent(url || document.location);
     text = text || document.title;
     des = des || '';
     thumb = thumb || '';
@@ -25,7 +25,7 @@ var share = {
         jump = `http://service.weibo.com/share/share.php?url=${url}&appkey=${appkey}&title=${text}&pic=${thumb}&ralateUid=1735559201`;
         break;
       case 'twitter':
-        jump = `https://twitter.com/share?url=${url}&text=${text + ' @geekparknet'}`;
+        jump = `https://twitter.com/intent/tweet?url=${url}&text=${text}&via=GeekParkNet`;
         break;
       case 'linkdin':
         jump = `https://www.linkedin.com/shareArticle?mini=true&url=${url}&title=${text}&summary=${des}&source=GeekPark`
