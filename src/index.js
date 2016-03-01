@@ -14,8 +14,8 @@ var share = {
   },
   run({type, url, text, des, thumb, appkey}) {
     url = encodeURIComponent(url || document.location);
-    text = text || document.title;
-    des = des || '';
+    text = encodeURIComponent(text || document.title);
+    des = encodeURIComponent(des || '');
     thumb = thumb || '';
     appkey = appkey || '3896321144';
 
